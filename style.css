@@ -176,8 +176,7 @@ nav ul li a:hover {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 100vh;
-    max-height: 100vh;
+    min-height: 100vh;
 }
 
 .que-hacemos .que-hacemos-text {
@@ -264,8 +263,9 @@ nav ul li a:hover {
 
 @media (max-width: 660px){
     .que-hacemos {
-        position: relative;
-        top: -135px;
+        padding-top: 0;
+        /* position: relative;
+        top: -135px; */
     }
 
     .que-hacemos .que-hacemos-text {
@@ -282,47 +282,167 @@ nav ul li a:hover {
 }
 
 
+/* cards */
+.cards {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+}
 
+.cards > h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
 
+.cards > p {
+    color: #808080;
+    text-align: justify;
+    font-size: 14px;
+    font-family: sans-serif;
+    line-height: 25px;
+    margin-bottom: 40px;
+}
 
+.cards .cards-hijos {
+    display: flex;
+    flex-direction: column;
+}
 
+.cards .cards-hijos .cards-hijos-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+}
 
+.cards .cards-hijos .cards-hijos-section .cards-hijos_item {
+    width: 48%;
+    border-radius: 28px;
+    padding: 60px 30px;
+}
 
+.cards .cards-hijos .cards-hijos-section .cards-hijos_item:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,.25);
+}
 
+.cards .cards-hijos .cards-hijos_item span {
+    display: inline-block;
+    width: 100%;
+    height: 70px;
+    background-image: url('./img/paz.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
 
+.cards .cards-hijos .cards-hijos_item .cards-hijos_item_span2 {
+    background-image: url('./img/salud-mental.png');
+}
+
+.cards .cards-hijos .cards-hijos_item .cards-hijos_item_span3 {
+    background-image: url('./img/equipo.png');
+}
+
+.cards .cards-hijos .cards-hijos_item .cards-hijos_item_span4 {
+    background-image: url('./img/intelectual.png');
+}
+
+.cards .cards-hijos .cards-hijos_item h1 {
+    color: #a8efae;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.cards .cards-hijos .cards-hijos_item p {
+    color: #808080;
+    width: 300px;
+    height: 80px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 22px;
+}
+
+@media (max-width: 990px){
+    .cards .cards-hijos .cards-hijos-section {
+        flex-direction: column;
+    }
+
+    .cards .cards-hijos .cards-hijos-section .cards-hijos_item {
+        width: 100%;
+        box-shadow: 0 2px 8px rgba(0,0,0,.25);
+        margin-bottom: 20px;
+    }
+
+    .cards .cards-hijos .cards-hijos-section .cards-hijos_item p {
+        width: 70%;
+    }
+}
+
+@media (max-width: 660px){
+    .cards {
+        padding: 0 20px;
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 660px){
+    .cards {
+        padding: 0 20px;
+        margin-top: 30px;
+    }
+}
 
 /* banner */
 .banner {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 30vh;
     background-color: #a8efae;
-    color: white;
 }
 
-.banner div {
-    width: 70%;
+.banner .banner-container-text {
     text-align: justify;
     padding-left: 100px;
+    width: 100%;
 }
 
-.banner div h1 {
+.banner .banner-container-text h1 {
     font-size: 24px;
+    color: #333333;
     margin-bottom: 16px;
 }
 
-.banner div p {
-    margin-bottom: 12px;
+.banner .banner-container-text p {
+    color: #808080;
+    font-size: 14px;
+    line-height: 24px;
 }
 
-.banner div button {
-    border: 1px solid green;
+.banner .banner-container-button {
+    display: flex;
+    justify-content: center;
+    padding-right: 100px;
+}
+
+.banner .banner-container-button button {
+    width: 150px;
+    border: 1px solid transparent;
     border-radius: 16px;
     padding: 8px 16px;
-    background-color: white;
-    color: black;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: rgb(36, 76, 38);
+}
+
+.banner .banner-container-button button:hover {
+    border: 1px solid #f39834;
+    background-color: #ffa440;
 }
 
 .banner div button:hover {
@@ -330,18 +450,340 @@ nav ul li a:hover {
     color: white;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 1010px) {
     .banner {
-        align-items: center;
-        height: 33vh;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
-    .banner div {
-        align-items: flex-start;
-        justify-content: center;
+    .banner .banner-container-text {
         text-align: center;
-        padding: 30px;
-        margin: 0 auto;
+        width: 100%;
+        padding: 20px;
     }
+
+    .banner .banner-container-button {
+        padding: 0 20px;
+    }
+
+}
+
+
+/* conocenos */
+.conocenos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 20px;
+}
+
+.conocenos .conocenos-text {
+    width: 70%;
+    padding-right: 100px;
+    order: 2;
+}
+
+.conocenos .conocenos-text h1 {
+    display: block;
+    text-align: center;
+    width: 300px;
+    color: #333333;
+    font-size: 36px;
+    font-family: sans-serif;
+    margin-bottom: 36px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.conocenos .conocenos-text p {
+    color: #808080;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #cccccc;
+    line-height: 25px;
+}
+
+.conocenos .conocenos-text button {
+    display: block;
+    width: 120px;
+    background-color: #a8efae;
+    border: 1px solid #9ce3a2;
+    border-radius: 24px;
+    padding: 12px 24px;
+    color: black;
+    font-weight: bold;
+}
+
+.conocenos .conocenos-text button:hover {
+    color: white;
+}
+
+.conocenos .conocenos-image {
+    order: 1;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 40px;
+}
+
+.conocenos .conocenos-image img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+@media (max-width: 775px){
+    .conocenos {
+        padding-top: 50px;
+        flex-direction: column;
+    }
+
+    .conocenos .conocenos-text {
+        width: 100%;
+        padding: 20px 100px;
+        margin-bottom: 60px;
+    }
+
+    .conocenos .conocenos-text h1 {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .conocenos .conocenos-text button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .conocenos .conocenos-image {
+        width: 100%;
+        padding: 0 100px;
+    }
+}
+
+@media (max-width: 660px){
+    .conocenos .conocenos-text {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .conocenos .conocenos-text h1 {
+        width: 250px;
+    }
+
+    .conocenos .conocenos-image {
+        order: 2;
+    }
+
+    .conocenos .conocenos-text, .conocenos .conocenos-image  {
+        padding: 20px;
+    }
+}
+
+
+/* proyectos */
+.proyectos-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    padding-top: 20px;
+}
+
+.proyectos-container h1 {
+    color: #333333;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.proyectos-container p {
+    color: #808080;
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 50px;
+}
+
+.proyectos-container .proyectos-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.proyectos-container .proyectos-cards .proyectos-cards_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    border-radius: 60%;
+}
+
+.proyectos-container .proyectos-cards .proyectos-cards_item img {
+    height: 200px;
+    width: 200px;
+    border-radius: 60%;
+    object-fit: cover;
+}
+
+.proyectos-container .proyectos-cards .proyectos-cards_item h2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #333333;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.proyectos-container .proyectos-cards .proyectos-cards_item p {
+    color: #808080;
+    width: 70%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 960px){
+    .proyectos-container .proyectos-cards {
+        flex-direction: column;
+    }
+
+    .proyectos-container .proyectos-cards .proyectos-cards_item {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .proyectos-container .proyectos-cards .proyectos-cards_item img {
+        height: 400px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 660px){
+    .proyectos-container {
+        padding: 0 20px;
+        padding-top: 20px;
+    }
+
+    .proyectos-container .proyectos-cards .proyectos-cards_item img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+
+
+
+
+/* banner */
+.banner-dos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #a8efae;
+    padding: 0 100px;
+    padding-top: 40px;
+}
+
+
+.banner-dos-container {
+    border-bottom: 1px solid black;
+}
+
+.banner-dos-container h1 {
+    color: #333333;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-dos-container h3 {
+    color: #333333;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-dos-container > p {
+    color: #808080;
+    width: 100%;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin-bottom: 40px;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #cccccc;
+    line-height: 25px;
+}
+
+.banner-dos-container .banner-dos-container-image {
+    width: 125px;
+    height: 125px;
+    background-image: url('https://www.fundacionsantodomingo.org/wp-content/uploads/2020/04/testimonio-luis-carlos-garcia2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.banner-dos-container .banner-dos-container-descripcion h3 {
+    color: #333333;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-dos-container .banner-dos-container-descripcion p {
+    color: #808080;
+    width: 100%;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin-bottom: 40px;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #cccccc;
+    line-height: 25px;
+}
+
+.banner-dos .banner-dos-container-redes {
+
+}
+
+.banner-dos .banner-dos-container-redes p {
+    
+}
+
+.banner-dos .banner-dos-container-redes .redes {
+    
+}
+
+.banner-dos .banner-dos-container-redes .redes span {
+    
+}
+
+@media (max-width: 660px) {
+    
+     
 }
 

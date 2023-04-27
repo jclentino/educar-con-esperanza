@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundacion los olivos</title>
+    <title>Fundacion educar con esperanza</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -19,13 +19,13 @@
             </div>
             <ul>
                 <li>
-                    <a href="">Inicio</a>
+                    <a href="#inicio">Inicio</a>
                 </li>
                 <li>
                     <a href="#que-hacemos">Que hacemos</a>
                 </li>
                 <li>
-                    <a href="">Conocenos</a>
+                    <a href="#conocenos">Conocenos</a>
                 </li>
                 <li>
                     <a href="">Contacto</a>
@@ -35,7 +35,7 @@
     </header>
 
     <main>
-        <section class="video-banner">
+        <section id="inicio" class="video-banner">
             <div class="video-banner-opacity"></div>
             <video src="./img/video.webm" autoplay muted loop>
             </video>
@@ -52,7 +52,7 @@
                     Somos una Organización sin ánimo de lucro que desde hace 60 años tiene un gran propósito superior, que más personas en Colombia puedan proveer bienestar a sus familias y lograr de este país un lugar más equitativo. En alianza con organizaciones públicas y privadas lideramos proyectos en sectores priorizados entre ellos; Educación, Medio Ambiente, Salud y Desarrollo Territorial, este último con enfoque en el Caribe colombiano.
                     Buscamos liderar el sector social, incidiendo en políticas públicas y articulando esfuerzos principalmente para el desarrollo sostenible de Barranquilla, Cartagena, Barú y de forma ampliada en todo el territorio nacional.
                 </p>
-                <button>Ver mas</button>
+                <button><a href="#cards">Ver mas</a></button>
             </div>
             <div class="que-hacemos-image">
                 <img 
@@ -62,14 +62,131 @@
             </div>
         </section>
 
+        <section  id="cards" class="cards">
+            <h1>Cambiemos el futuro juntos</h1>
+            <p>Para lograr que la niñez y la adolescencia asista al colegio 188 días del año, 7 horas diarias, es necesario construir 63 mil aulas, que corresponden a 3 mil instituciones educativos. Desde la Fundación Pies Descalzos construimos todos los días, ladrillo a ladrillo, junto con nuestros aliados y donantes un futuro distinto para los niños, niñas y jóvenes en Colombia. Conoce nuestros proyectos y contribuye a promover la educación pública de calidad en el país</p>
+            <div class="cards-hijos">
+                <div class="cards-hijos-section">
+                    <div class="cards-hijos_item">
+                        <span class="cards-hijos_item_span1"></span>
+                        <h1>Educacion</h1>
+                        <p>
+                            Las organizaciones también pueden ser parte del
+                            cambio y fortalecer los procesos de aprendizaje.
+                        </p>
+                    </div>
+                    <div class="cards-hijos_item">
+                        <span class="cards-hijos_item_span2"></span>
+                        <h1>Educacion</h1>
+                        <p>
+                            Las organizaciones también pueden ser parte del
+                            cambio y fortalecer los procesos de aprendizaje
+                        </p>
+                    </div>
+                </div>
+                <div class="cards-hijos-section">
+                    <div class="cards-hijos_item">
+                        <span class="cards-hijos_item_span3"></span>
+                        <h1>Educacion</h1>
+                        <p>
+                            Las organizaciones también pueden ser parte del
+                            cambio y fortalecer los procesos de aprendizaje
+                        </p>
+                    </div>
+                    <div class="cards-hijos_item">
+                        <span class="cards-hijos_item_span4"></span>
+                        <h1>Educacion</h1>
+                        <p>
+                            Las organizaciones también pueden ser parte del
+                            cambio y fortalecer los procesos de aprendizaje
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <!-- <section class="banner">
-            <div>
-                <h1>Titulo</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, reiciendis? Labore optio tempora ipsa non expedita.</p>
-                <button>Ver mas <span class="icon-plus"></span></button>
+        <section class="banner">
+            <div class="banner-container-text">
+                <h1>Subscribete a nuestro boletin</h1>
+                <p>No te pierdas las noticias y el impacto de nuestra labor por el desarrollo sostenible de Colombia</p>
             </div>     
-        </section> -->
+            <div class="banner-container-button">
+                <button>Quiero ver mas<span class="icon-plus"></span></button>
+            </div>
+        </section>
+
+        <section id="conocenos" class="conocenos">
+            <div class="conocenos-image">
+                <img 
+                    src="https://i.ytimg.com/vi/GDfJN3ABfq4/hqdefault.jpg" 
+                    alt="imagen"
+                >
+            </div>
+            <div id="conocenos" class="conocenos-text">
+                <h1>Sobre nosotros</h1>
+                <p>
+                    Somos una Organización sin ánimo de lucro que desde hace 60 años tiene un gran propósito superior, que más personas en Colombia puedan proveer bienestar a sus familias y lograr de este país un lugar más equitativo. En alianza con organizaciones públicas y privadas lideramos proyectos en sectores priorizados entre ellos; Educación, Medio Ambiente, Salud y Desarrollo Territorial, este último con enfoque en el Caribe colombiano.
+                    Buscamos liderar el sector social, incidiendo en políticas públicas y articulando esfuerzos principalmente para el desarrollo sostenible de Barranquilla, Cartagena, Barú y de forma ampliada en todo el territorio nacional.
+                </p>
+                <button><a href="#proyectos">Ver mas</a></button>
+            </div>
+        </section>
+
+        <section id="proyectos" class="proyectos-container">
+            <h1>Nuestros proyectos</h1>
+            <p>Para lograr que la niñez y la adolescencia asista al colegio 188 días del año, 7 horas diarias, es necesario construir 63 mil aulas, que corresponden a 3 mil instituciones educativos. Desde la Fundación Pies Descalzos construimos todos los días, ladrillo a ladrillo, junto con nuestros aliados y donantes un futuro distinto para los niños, niñas y jóvenes en Colombia. Conoce nuestros proyectos y contribuye a promover la educación pública de calidad en el país</p>
+            <div class="proyectos-cards">
+                <div class="proyectos-cards_item">
+                    <img 
+                        src="https://www.fundacionsantodomingo.org/wp-content/uploads/2022/12/inauguracion-vsp-1024x576.jpg" 
+                        alt="niños"
+                    >
+                    <h2>Union</h2>
+                    <p>Para lograr la novena se reunieron mas de 50 niños todas las noches</p>
+                </div>
+                <div class="proyectos-cards_item">
+                    <img 
+                    src="https://www.fundacionsantodomingo.org/wp-content/uploads/2022/12/inauguracion-vsp-1024x576.jpg" 
+                    alt="niños"
+                    >
+                    <h2>Union</h2>
+                    <p>Para lograr la novena se reunieron mas de 50 niños todas las noches</p>
+                </div>
+                <div class="proyectos-cards_item">
+                    <img 
+                    src="https://www.fundacionsantodomingo.org/wp-content/uploads/2022/12/inauguracion-vsp-1024x576.jpg" 
+                    alt="niños"
+                    >
+                    <h2>Union</h2>
+                    <p>Para lograr la novena se reunieron mas de 50 niños todas las noches</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner-dos">
+            <div class="banner-dos-container">
+                <h1>Fundadora</h1>
+                <h3>Miles de historias transformadas gracias a nuestra misión</h3>
+                <p>«Todo comenzó como un proyecto de tesis, a través del tiempo con el acompañamiento y el apoyo financiero de la Fundación, junto a mi familia hemos crecido como empresa. Nuestro próximo sueño es tener una planta propia»</p>
+                <div class="banner-dos-container-image">
+                    <!-- <img src="" alt=""> -->
+                </div>
+                <div class="banner-dos-container-descripcion">
+                    <h3>Luis Carlos García Cárcamo</h3>
+                    <p>Confecciones, Stylos y Tendencias LTDA</p>
+                </div>
+            </div>
+
+            <div class="banner-dos-container-redes">
+                <p>!Te invitamos a compartir nuestro contenido "Bienvenidos"!</p>
+                <div class="redes">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </section>
 
     </main>
 </body>
