@@ -6,12 +6,13 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 a {
+    color: #333333;
     text-decoration: none;
-    color: black;
+    font-size: 20px;
 }
 
 nav {
@@ -22,7 +23,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15px;
+    padding: 0 20px;
     width: 100%;
     min-height: 80px;
     border-bottom: 1px solid #f2f2f2;
@@ -35,7 +36,6 @@ nav .container-logo {
 
 nav .container-logo span {
     padding-left: 10px;
-    font-size: 16px;
 }
 
 nav .container-logo img {
@@ -46,20 +46,20 @@ nav .container-logo img {
 nav ul {
     display: flex;
     justify-content: space-between;
-    height: inherit;
     align-items: center;
+    height: inherit;
     list-style: none;
 }
 
 nav ul li a {
     margin-left: 15px;
-    padding: 8px 10px;
+    padding: 8px 12px;
     border: 1px solid transparent;
-    border-radius: 12px;
+    border-radius: 22px;
 }
 
 nav ul li a:hover {
-    border-color: green;
+    border-color: #a8efae;
 }
 
 @media (max-width: 660px){
@@ -134,8 +134,9 @@ nav ul li a:hover {
 
 .video-banner .video-banner-text {
     position: absolute;
-    width: 90%;
+    width: 100%;
     top: 40%;
+    padding: 0 100px;
 }
 
 .video-banner h1 {
@@ -149,7 +150,7 @@ nav ul li a:hover {
 
 .video-banner-text p {
     width: 100%;
-    color: yellow;
+    color: #ffae0f;
     font-size: 20px;
     text-align: center;
 }
@@ -162,7 +163,9 @@ nav ul li a:hover {
 
     .video-banner .video-banner-text {
         top: 20%;
+        padding: 0 30px;
     }
+
 
     .video-banner .video-banner-opacity {
         top: 9px;
@@ -177,15 +180,14 @@ nav ul li a:hover {
     align-items: center;
     width: 100%;
     min-height: 100vh;
+    padding: 40px 100px;
 }
 
 .que-hacemos .que-hacemos-text {
     width: 50%;
-    padding-left: 100px;
 }
 
 .que-hacemos .que-hacemos-text h1 {
-    display: block;
     text-align: center;
     width: 300px;
     color: #333333;
@@ -201,7 +203,7 @@ nav ul li a:hover {
     font-size: 14px;
     font-family: sans-serif;
     margin-bottom: 10px;
-    text-align: left;
+    text-align: justify;
     padding-bottom: 15px;
     border-bottom: 1px solid #cccccc;
     line-height: 25px;
@@ -209,7 +211,7 @@ nav ul li a:hover {
 
 .que-hacemos .que-hacemos-text button {
     display: block;
-    width: 120px;
+    width: 140px;
     background-color: #a8efae;
     border: 1px solid #9ce3a2;
     border-radius: 24px;
@@ -218,7 +220,7 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-.que-hacemos .que-hacemos-text button:hover {
+.que-hacemos .que-hacemos-text button a:hover {
     color: white;
 }
 
@@ -234,13 +236,12 @@ nav ul li a:hover {
 
 @media (max-width: 775px){
     .que-hacemos {
-        padding-top: 50px;
+        padding: 40px 100px;
         flex-direction: column;
     }
 
     .que-hacemos .que-hacemos-text {
         width: 100%;
-        padding: 20px 100px;
         margin-bottom: 60px;
     }
 
@@ -257,27 +258,18 @@ nav ul li a:hover {
 
     .que-hacemos .que-hacemos-image {
         width: 100%;
-        padding: 0 100px;
     }
 }
 
 @media (max-width: 660px){
     .que-hacemos {
         padding-top: 0;
-        /* position: relative;
-        top: -135px; */
-    }
+        padding: 0 30px 30px 30px;
 
-    .que-hacemos .que-hacemos-text {
-        margin-bottom: 20px;
     }
 
     .que-hacemos .que-hacemos-text h1 {
         width: 250px;
-    }
-
-    .que-hacemos .que-hacemos-text, .que-hacemos .que-hacemos-image  {
-        padding: 20px;
     }
 }
 
@@ -286,7 +278,7 @@ nav ul li a:hover {
 .cards {
     width: 100%;
     min-height: 100vh;
-    padding: 0 100px;
+    padding: 40px 100px;
 }
 
 .cards > h1 {
@@ -384,15 +376,7 @@ nav ul li a:hover {
 
 @media (max-width: 660px){
     .cards {
-        padding: 0 20px;
-        margin-top: 150px;
-    }
-}
-
-@media (max-width: 660px){
-    .cards {
-        padding: 0 20px;
-        margin-top: 30px;
+        padding: 30px;
     }
 }
 
@@ -401,14 +385,15 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     height: 30vh;
+    width: 100%;
+    padding: 40px 100px;
     background-color: #a8efae;
 }
 
 .banner .banner-container-text {
     text-align: justify;
-    padding-left: 100px;
+    /* padding-left: 100px; */
     width: 100%;
 }
 
@@ -427,7 +412,7 @@ nav ul li a:hover {
 .banner .banner-container-button {
     display: flex;
     justify-content: center;
-    padding-right: 100px;
+    /* padding-right: 100px; */
 }
 
 .banner .banner-container-button button {
@@ -443,12 +428,9 @@ nav ul li a:hover {
 .banner .banner-container-button button:hover {
     border: 1px solid #f39834;
     background-color: #ffa440;
+    color: #f2f2f2;
 }
 
-.banner div button:hover {
-    background-color: green;
-    color: white;
-}
 
 @media (max-width: 1010px) {
     .banner {
@@ -459,13 +441,24 @@ nav ul li a:hover {
     .banner .banner-container-text {
         text-align: center;
         width: 100%;
-        padding: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 660px){
+    .banner {
+        padding: 20px 30px;
+    }
+}
+
+@media (max-width: 390px){
+    .banner {
+        padding: 20px 0; 
     }
 
-    .banner .banner-container-button {
-        padding: 0 20px;
+    .banner .banner-container-text {
+        padding-bottom: 4px;
     }
-
 }
 
 
@@ -476,12 +469,11 @@ nav ul li a:hover {
     align-items: center;
     width: 100%;
     min-height: 100vh;
-    margin-top: 20px;
+    padding: 40px 100px;
 }
 
 .conocenos .conocenos-text {
     width: 70%;
-    padding-right: 100px;
     order: 2;
 }
 
@@ -502,7 +494,7 @@ nav ul li a:hover {
     font-size: 14px;
     font-family: sans-serif;
     margin-bottom: 10px;
-    text-align: left;
+    text-align: justify;
     padding-bottom: 15px;
     border-bottom: 1px solid #cccccc;
     line-height: 25px;
@@ -510,7 +502,7 @@ nav ul li a:hover {
 
 .conocenos .conocenos-text button {
     display: block;
-    width: 120px;
+    width: 130px;
     background-color: #a8efae;
     border: 1px solid #9ce3a2;
     border-radius: 24px;
@@ -519,14 +511,13 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-.conocenos .conocenos-text button:hover {
-    color: white;
+.conocenos .conocenos-text button a:hover {
+    color: #f2f2f2;
 }
 
 .conocenos .conocenos-image {
     order: 1;
     width: 100%;
-    padding-left: 100px;
     padding-right: 40px;
 }
 
@@ -538,13 +529,12 @@ nav ul li a:hover {
 
 @media (max-width: 775px){
     .conocenos {
-        padding-top: 50px;
         flex-direction: column;
     }
 
     .conocenos .conocenos-text {
         width: 100%;
-        padding: 20px 100px;
+        padding-top: 20px;
         margin-bottom: 60px;
     }
 
@@ -561,11 +551,15 @@ nav ul li a:hover {
 
     .conocenos .conocenos-image {
         width: 100%;
-        padding: 0 100px;
+        padding-right: 0;
     }
 }
 
 @media (max-width: 660px){
+    .conocenos {
+        padding: 30px;
+    }
+
     .conocenos .conocenos-text {
         order: 1;
         margin-bottom: 20px;
@@ -578,10 +572,6 @@ nav ul li a:hover {
     .conocenos .conocenos-image {
         order: 2;
     }
-
-    .conocenos .conocenos-text, .conocenos .conocenos-image  {
-        padding: 20px;
-    }
 }
 
 
@@ -589,8 +579,7 @@ nav ul li a:hover {
 .proyectos-container {
     width: 100%;
     min-height: 100vh;
-    padding: 0 100px;
-    padding-top: 20px;
+    padding: 40px 100px;
 }
 
 .proyectos-container h1 {
@@ -608,6 +597,7 @@ nav ul li a:hover {
     font-size: 14px;
     line-height: 25px;
     margin-bottom: 50px;
+    text-align: justify;
 }
 
 .proyectos-container .proyectos-cards {
@@ -662,6 +652,10 @@ nav ul li a:hover {
         margin-bottom: 40px;
     }
 
+    .proyectos-container .proyectos-cards .proyectos-cards_item p {
+        width: 100%;
+    }
+
     .proyectos-container .proyectos-cards .proyectos-cards_item img {
         height: 400px;
         width: 400px;
@@ -670,8 +664,7 @@ nav ul li a:hover {
 
 @media (max-width: 660px){
     .proyectos-container {
-        padding: 0 20px;
-        padding-top: 20px;
+        padding: 30px;
     }
 
     .proyectos-container .proyectos-cards .proyectos-cards_item img {
@@ -681,9 +674,6 @@ nav ul li a:hover {
 }
 
 
-
-
-
 /* banner */
 .banner-dos {
     display: flex;
@@ -691,8 +681,7 @@ nav ul li a:hover {
     width: 100%;
     min-height: 100vh;
     background-color: #a8efae;
-    padding: 0 100px;
-    padding-top: 40px;
+    padding: 40px 100px;
 }
 
 
@@ -766,24 +755,203 @@ nav ul li a:hover {
     line-height: 25px;
 }
 
-.banner-dos .banner-dos-container-redes {
-
-}
-
 .banner-dos .banner-dos-container-redes p {
-    
+    color: #333333;
+    width: 100%;
+    font-size: 48px;
+    font-family: sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .banner-dos .banner-dos-container-redes .redes {
-    
+    display: flex;
+    justify-content: center;
 }
 
 .banner-dos .banner-dos-container-redes .redes span {
-    
+    width: 45px;
+    height: 45px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-dos .banner-dos-container-redes .redes span.wp {
+    background-image: url('./img/whatsapp.png');
+    margin-right: 10px;
+}
+
+.banner-dos .banner-dos-container-redes .redes span.twitter {
+    background-image: url('./img/twitter.png');
+}
+
+.banner-dos .banner-dos-container-redes .redes span.fb {
+    background-image: url('./img/facebook.png');
+    margin-right: 10px;
 }
 
 @media (max-width: 660px) {
-    
-     
+    .banner-dos {
+        padding: 30px;
+    } 
 }
 
+/* mensajes */
+.mensajes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 100px;
+}
+
+.mensajes .mensajes-container-card {
+    width: 50%;
+    padding: 20px;
+}
+
+.mensajes .mensajes-container-card .mensajes-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 400px;
+    padding: 50px;
+    border: 1px solid #f2f2f2;
+    border-radius: 36px;
+}
+
+.mensajes .mensajes-container-card .mensajes-card:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
+
+.mensajes .mensajes-container-card .mensajes-card span { 
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.mensajes .mensajes-container-card .mensajes-card span.mensaje-card-img1{ 
+    background-image: url('./img/rompecabezas.png');
+}
+
+.mensajes .mensajes-container-card .mensajes-card span.mensaje-card-img2{ 
+    background-image: url('./img/international-literacy-day.png');
+}
+
+.mensajes .mensajes-container-card .mensajes-card span.mensaje-card-img3{ 
+    background-image: url('./img/abaco.png');
+}
+
+.mensajes .mensajes-container-card .mensajes-card span.mensaje-card-img4{ 
+    background-image: url('./img/paz.png');
+}
+
+.mensajes .mensajes-container-card .mensajes-card p { 
+    color: #808080;
+    width: 100%;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin-bottom: 40px;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #cccccc;
+    line-height: 25px;
+}
+
+@media (max-width: 900px){
+    .mensajes .mensajes-container-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 660px){
+    .mensajes {
+        padding: 30px;
+    }
+
+    .mensajes .mensajes-container-card {
+        width: 100%;
+    }
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 260px;
+    background-color: #333333;
+    padding: 20px 100px;
+}
+
+footer .footer-info {
+    display: flex;
+    flex-direction: column;    
+}
+
+footer .footer-info span {
+    color: #f2f2f2;
+    line-height: 25px;
+    font-size: 20px;
+    padding: 4px 0;
+}   
+
+footer .footer-contactos {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-contactos h1 {
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer .footer-contactos .footer-contactos-redes {
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-contactos .footer-contactos-redes span {
+    width: 45px;
+    height: 45px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer .footer-contactos .footer-contactos-redes span.footer-contactos-wp {
+    background-image: url('./img/whatsapp.png');
+    margin-right: 8px;
+}
+
+footer .footer-contactos .footer-contactos-redes span.footer-contactos-fb{
+    background-image: url('./img/facebook.png');
+    margin-right: 8px;
+}
+
+footer .footer-contactos .footer-contactos-redes span.footer-contactos-twitter {
+    background-image: url('./img/twitter.png');
+}
+
+@media (max-width: 660px){
+    footer {
+        flex-direction: column;
+    }
+
+    footer .footer-info {
+        text-align: center;
+    }
+}
