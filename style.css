@@ -881,6 +881,17 @@ nav ul li a:hover {
     }
 }
 
+/* contacto flotante */
+/* .contacto-flotante {
+    position: fixed;
+    top: 40%;
+    left: 0;
+    height: 300px;
+    width: 30px;
+    background-color: black;
+} */
+
+
 /* footer */
 footer {
     display: flex;
