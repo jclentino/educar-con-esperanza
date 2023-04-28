@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundacion educar con esperanza</title>
+
+
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -17,7 +19,7 @@
                 >
                 <span></span>
             </div>
-            <ul>
+            <ul class="menu-items">
                 <li>
                     <a href="#inicio">Inicio</a>
                 </li>
@@ -32,6 +34,35 @@
                 </li>
             </ul>
         </nav>
+        <div id="menu-icon" class="container-menu">
+            <img 
+                src="./img/menu.png" 
+                alt="menu-icon"
+            >
+        </div>
+        <div id="menu-flotante" class="container-menu-flotante container-menu-oculto">
+            <ul>
+                <li>
+                    <a href="#inicio">Inicio</a>
+                </li>
+                <li>
+                    <a id="que-hacemos-flotante" href="#que-hacemos">Que hacemos</a>
+                </li>
+                <li>
+                    <a href="#conocenos">Conocenos</a>
+                </li>
+                <li>
+                    <a href="#contacto">Contacto</a>
+                </li>
+            </ul>
+            <div class="container-menu-flotante-icon-salir">
+                <img
+                    id="salir-icon" 
+                    src="./img/eliminar.png" 
+                    alt="icon-salir"
+                >
+            </div>
+        </div>
     </header>
 
     <main>
@@ -234,6 +265,26 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const menuIcon = document.getElementById('menu-icon')
+        const menuFlotante = document.getElementById('menu-flotante')
+
+        menuIcon.addEventListener("click", function() {
+                if (menuFlotante.classList.contains("container-menu-oculto")) {
+                    menuFlotante.classList.remove("container-menu-oculto")
+                } else {
+                    menuFlotante.classList.add("container-menu-oculto");
+                }
+            }
+        )
+
+        const salirIcon = document.getElementById('salir-icon')
+        salirIcon.addEventListener("click", function() {
+            menuFlotante.classList.add("container-menu-oculto")
+            }
+        )
+    </script>
 </body>
 </html>
 
